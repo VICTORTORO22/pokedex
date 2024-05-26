@@ -1,0 +1,119 @@
+.poke {
+    width: 100%;
+    max-width: 23em;
+    border: 0.6em solid #aaa;
+    border-radius: 0.8em;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 100ms ease;
+    &:hover {
+        transform: scale(1.03);
+
+    }
+}
+.poke_header {
+    background-color: #777;
+    width: 100%;
+    aspect-ratio: 1.7;
+    position: relative;
+    margin-bottom: 4em;
+
+}
+.poke_sprite {
+    position: absolute;
+    width: 70%;
+    top: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.poke_body {
+    padding: 0 1em 2.5em;
+}
+.poke_name {
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 0.1em;
+}
+.poke_types {
+    --gap: 0.8em;
+    display: flex;
+    justify-content: center;
+    gap: var(--gap);
+    
+
+}
+.poke_types_item {
+    display: flex;
+    gap: var(--gap);
+    &:nth-child(2)::before{
+        content: '/';
+        color: #aaa;
+
+    }
+}
+.poke_hr {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-color: #7771;
+}
+.poke_stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.2em;
+}
+.poke_stats_item {
+    display: grid;
+    gap: 0.2em;
+    justify-items: center;
+}
+.poke_stats_label {
+    text-transform: uppercase;
+    font-size: 0.7em;
+
+}
+.poke_stats_value {
+    font-size: 1.1em;
+
+}
+
+
+.bg_grass {
+    background: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
+}
+.bg_fire {
+    background: linear-gradient(176.37deg, #F96D6F -32.26%, #E35825 22.55%, #E8AE1B 125.72%);
+}
+.bg_water {
+    background: linear-gradient(179.57deg, #133258 -70.14%, #1479FB 56.16%, #82B2F1 214.85%);
+}
+.bg_bug {
+    background: linear-gradient(#654008 100%, #895C1A  100%, #D69638  100%)
+    
+}
+
+.border_grass {
+    border-color: #CAE099;
+}
+.border_fire {
+    border-color: #E8AE1B;
+}
+.border_water {
+    border-color:#1479FB ;
+}
+.border_bug {
+    border-color: #895C1A; 
+}
+
+
+.text_grass {
+    color:#416460 ;
+}
+.text_fire{
+    color: #E75C35;
+}
+.text_water {
+    color: #1479FB;
+}
+.text_bug {
+    color: #654008;
+}

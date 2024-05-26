@@ -1,0 +1,110 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: none;
+    
+    
+  }
+  .home{
+    background-image: url('/image/fondo.jpg'); /* Asegúrate de que la ruta sea correcta */
+    width: 100vw;   /* 100% del ancho del viewport */
+    height: 100vh;  /* 100% de la altura del viewport */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  /* Asegúrate de que el contenedor tenga una posición relativa */
+.home__container {
+    position: relative;
+    text-align: center; /* Centrar el texto dentro del contenedor */
+    background-color: rgba(255, 255, 255, 0.3); /* Fondo blanco semitransparente */
+    padding: 2em; /* Espaciado interno */
+    border-radius: 1em; /* Bordes redondeados */
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    max-width: 600px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+  }
+  
+  .home__img {
+    width: 100%; /* Establece el ancho al 100% */
+    height: auto; /* Mantén la proporción */
+    border-radius: 1em; /* Ajusta los bordes redondeados si es necesario */
+  }
+  .home__title{
+    color: #fe1936;
+  }
+  
+  
+  .home__info {
+    font-size: 1.2em;
+    color: #070707;
+    margin-bottom: 1em;
+  }
+  
+  .home__input {
+    outline: none;
+    font-size: 1em;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+  }
+  
+  .home__btn {
+    cursor: pointer;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0.5em;
+    background-color:  #fe1936;
+    color: white;
+  }
+  
+  /* Media queries para hacer el diseño responsivo */
+  @media screen and (max-width: 1200px) {
+    .home__info {
+      font-size: 1.1em;
+    }
+    .home__input, .home__btn {
+      font-size: 0.9em;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .home__info {
+      font-size: 1em;
+    }
+    .home__input, .home__btn {
+      font-size: 0.85em;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .home__info {
+      font-size: 0.9em;
+    }
+    .home__input, .home__btn {
+      font-size: 0.8em;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .home__info {
+      font-size: 0.8em;
+    }
+    .home__input, .home__btn {
+      font-size: 0.75em;
+    }
+  }
+  

@@ -1,0 +1,138 @@
+
+.pokedex {
+  display: flex; /* Utiliza flexbox para la disposición */
+  flex-direction: column; /* Dispone los elementos en una columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  width: 100%; /* Ancho completo del contenedor */
+  padding: 20px; /* Espaciado interno */
+  background-color: #ff6347; /* Color de fondo */
+}
+
+/* Menú de la Pokedex */
+.pokedex__menu {
+  display: flex; /* Utiliza flexbox para la disposición */
+  flex-direction: column; /* Dispone los elementos en una columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  width: 90%; /* Ancho del 90% del contenedor */
+  max-width: 600px; /* Ancho máximo */
+  margin: 0 auto 20px; /* Centrado horizontal y margen inferior */
+}
+
+/* Imagen principal */
+.pokedex__img {
+  width: 100%; /* Ancho completo */
+  height: auto; /* Altura automática para mantener la proporción */
+  object-fit: cover; /* La imagen se ajusta para cubrir el contenedor */
+  border-radius: 10px; /* Bordes redondeados */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Texto de bienvenida */
+.pokedex__parrafo-header {
+  font-size: 1.2em; /* Tamaño de fuente */
+  color: #333; /* Color del texto */
+  margin-bottom: 20px; /* Espaciado inferior */
+  text-align: center; /* Texto centrado */
+}
+
+/* Formulario de búsqueda */
+.pokedex__form-header {
+  display: flex; /* Utiliza flexbox para la disposición */
+  align-items: center; /* Alinea los elementos verticalmente al centro */
+  width: 100%; /* Ancho completo */
+  justify-content: space-between; /* Espacio entre los elementos */
+  margin-bottom: 20px; /* Espaciado inferior */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+}
+
+/* Input de búsqueda */
+.pokedex__input-header {
+  padding: 10px; /* Espaciado interno */
+  font-size: 1em; /* Tamaño de fuente */
+  flex-grow: 1; /* Permite que el input crezca para llenar el espacio disponible */
+  margin-right: 10px; /* Espaciado derecho */
+  border: 1px solid #ccc; /* Borde */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Botón de búsqueda */
+.pokedex__btn-header {
+  padding: 5px 10px; /* Padding reducido para hacer el botón más pequeño */
+  font-size: 0.8em; /* Tamaño de fuente más pequeño */
+  background-color: #ff6347; /* Color de fondo */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor de mano */
+}
+
+/* Efecto hover para el botón de búsqueda */
+.pokedex__btn-header:hover {
+  background-color: #ff4500; /* Color de fondo al pasar el cursor */
+}
+
+/* Imagen del menú */
+.pokedex__img-menu {
+  width: 50px; /* Ancho de la imagen */
+  height: 50px; /* Altura de la imagen */
+  margin-top: 20px; /* Espaciado superior */
+}
+
+/* Separador horizontal */
+.pokedex__separator {
+  width: 100%; /* Ancho completo */
+  border: 1px solid #ccc; /* Color y grosor del borde */
+  margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+/* Contenedor de las tarjetas de Pokémon */
+.pokedex__card {
+  display: flex; /* Utiliza flexbox para la disposición */
+  flex-wrap: wrap; /* Permite que las tarjetas se ajusten y envuelvan */
+  justify-content: center; /* Centrar las tarjetas horizontalmente */
+  gap: 20px; /* Espaciado entre las tarjetas */
+  width: 100%; /* Ancho completo */
+}
+
+/* Media Queries para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  /* Ajustes para el menú en pantallas pequeñas */
+  .pokedex__menu {
+      width: 100%; /* Ancho completo en pantallas pequeñas */
+      padding: 10px; /* Padding reducido */
+  }
+
+  /* Ajustes para el formulario en pantallas pequeñas */
+  .pokedex__form-header {
+      flex-direction: column; /* Alinea los elementos verticalmente */
+      align-items: stretch; /* Asegura que los elementos tomen el ancho completo */
+  }
+
+  /* Ajustes para el input y el botón en pantallas pequeñas */
+  .pokedex__input-header, .pokedex__btn-header {
+      width: 100%; /* Ancho completo */
+      margin: 5px 0; /* Espaciado superior e inferior */
+  }
+
+  /* Ajustes para la imagen del menú en pantallas pequeñas */
+  .pokedex__img-menu {
+      margin-top: 10px; /* Espaciado superior reducido */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Ajustes para el texto de bienvenida en pantallas muy pequeñas */
+  .pokedex__parrafo-header {
+      font-size: 1em; /* Tamaño de fuente reducido */
+  }
+
+  /* Ajustes para la imagen del menú en pantallas muy pequeñas */
+  .pokedex__img-menu {
+      width: 40px; /* Ancho reducido */
+      height: 40px; /* Altura reducida */
+  }
+}
